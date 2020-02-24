@@ -1,0 +1,57 @@
+.fa {
+  position: relative;
+
+  &:after {
+    content: "";
+    font-family: "Poppins";
+    position: absolute;
+    color: #fac564;
+    right: -8px;
+    top: -5px;
+  }
+}
+
+.order {
+  &__info {
+    display: flex;
+    p {
+      flex: 1;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    p {
+      flex: 1;
+      padding: 5px 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.modal-dialog {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.modal-body {
+  color: #000 !important;
+  &h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #000 !important;
+  }
+}
+
+select:-internal-list-box option:checked {
+  background: #fac564 !important;
+}
